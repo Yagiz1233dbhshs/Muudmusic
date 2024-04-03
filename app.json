@@ -1,17 +1,77 @@
-from pyrogram import Client as Bot
-from pyrogram import idle
-from callsmusic import run
-from config import API_ID, API_HASH, BOT_TOKEN
-
-
-bot = Bot(
-    ":memory:",
-    API_ID,
-    API_HASH,
-    bot_token=BOT_TOKEN,
-    plugins=dict(root="handlers")
-)
-
-bot.start()
-run()
-idle()
+"name": "𝐈𝛕ᷟ͢𝚣⃪ꙴ ⋆‌⃝ʜᴏᴛ𓃭 ⃟ᴍᴜsɪᴄ⛦⃕͜༆",
+    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://telegra.ph/file/8a5171024a3bc5569ee3f.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "VenomX",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "A Bot's token from Botfather",
+        "value": "",
+        "required": true
+      },
+      "BOT_NAME": {
+        "description": "Get a mongodb url from https://cloud.mongodb.com.",
+        "value": "",
+        "required": true
+      },
+      "OWNER": {
+        "description": "The user id of user whom you would like to add as OWNER.",
+        "value": "",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "A Pyrogram v2 String Session from @Venom_string_robot on Telegram.",
+        "value": "",
+        "required": true
+      },
+      "PLAYLIST_NAME": {
+        "description": "Your Heroku account's API key",
+        "value": "",
+        "required": true
+      },
+      "BOT_USERNAME": {
+        "description": "Your heroku app name",
+        "value": "",
+        "required": true
+      },
+      "SUPPORT GROUP": {
+        "description": "ÇALMA LİSTESİ KİMLİĞİ.",
+        "value": "",
+        "required": true
+      }
+    },
+      "ASSISTANT_NAME": {
+        "description": "ÇALMA LİSTESİ KİMLİĞİ.",
+        "value": "",
+        "required": true
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+}

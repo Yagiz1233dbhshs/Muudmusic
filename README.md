@@ -34,6 +34,11 @@
 #### Railway Deploy
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/ClAT3Z)
 
+# Heroku'da Clonlamak
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/PlutoOwner/MuudMuzik)
+
+
 Get pyrogram (p)  `SESSION` buradan:
 <p align="center">STRING SESSION</p>
 
